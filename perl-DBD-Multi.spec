@@ -15,6 +15,7 @@ Source:         http://www.cpan.org/modules/by-module/DBD/%{module}-%{version}.t
 Buildrequires:	perl-devel
 %endif
 Buildrequires:	perl(DBD::File)
+Buildrequires:	perl(Class::Accessor::Fast)
 Buildrequires:	perl(Sys::SigAction)
 Buildrequires:	perl(Test::Pod)
 Buildrequires:	perl(Test::Pod::Coverage)
