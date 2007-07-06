@@ -14,6 +14,7 @@ Source:         http://www.cpan.org/modules/by-module/DBD/%{module}-%{version}.t
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
+Buildrequires:	perl(DBD::File)
 Buildrequires:	perl(Sys::SigAction)
 Buildrequires:	perl(Test::Pod)
 Buildrequires:	perl(Test::Pod::Coverage)
