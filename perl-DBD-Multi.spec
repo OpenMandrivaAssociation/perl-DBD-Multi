@@ -20,6 +20,7 @@ Buildrequires:	perl(Class::Accessor::Fast)
 Buildrequires:	perl(Sys::SigAction)
 Buildrequires:	perl(Test::Pod)
 Buildrequires:	perl(Test::Pod::Coverage)
+Buildrequires:	perl(Test::Exception)
 BuildArch:	noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 
