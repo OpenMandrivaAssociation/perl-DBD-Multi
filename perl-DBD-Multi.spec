@@ -22,7 +22,6 @@ Buildrequires:	perl(Test::Pod)
 Buildrequires:	perl(Test::Pod::Coverage)
 Buildrequires:	perl(Test::Exception)
 BuildArch:	noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
 
 %description
 This software manages multiple database connections for failovers and also
