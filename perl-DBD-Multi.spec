@@ -1,7 +1,7 @@
 %define module	DBD-Multi
 %define name	perl-%{module}
 %define version	0.14
-%define release	%mkrel 1
+%define release	%mkrel 3
 
 Name:		%{name}
 Version:	%{version}
