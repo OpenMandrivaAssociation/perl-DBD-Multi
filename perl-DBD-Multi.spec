@@ -1,16 +1,16 @@
-%define module	DBD-Multi
-%define name	perl-%{module}
-%define version	0.14
-%define release	%mkrel 3
+%define upstream_name	 DBD-Multi
+%define upstream_version 0.14
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Manage Multiple Data Sources with Failover and Load Balancing
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/DBD/%{module}-%{version}.tar.bz2
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/DBD/%{upstream_name}-%{upstream_version}.tar.bz2
+
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
@@ -22,7 +22,7 @@ Buildrequires:	perl(Test::Pod)
 Buildrequires:	perl(Test::Pod::Coverage)
 Buildrequires:	perl(Test::Exception)
 BuildArch:	noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This software manages multiple database connections for failovers and also
@@ -40,7 +40,7 @@ The interface is nearly the same as other DBI drivers with one notable
 exception.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -61,4 +61,3 @@ rm -rf %{buildroot}
 %doc README Changes
 %{perl_vendorlib}/DBD
 %_mandir/man3*/*
-
