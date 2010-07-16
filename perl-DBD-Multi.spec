@@ -1,5 +1,5 @@
 %define upstream_name	 DBD-Multi
-%define upstream_version 0.14
+%define upstream_version 0.15
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	Manage Multiple Data Sources with Failover and Load Balancing
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/DBD/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:    http://www.cpan.org/modules/by-module/DBD/%{upstream_name}-%{upstream_version}.tar.gz
 
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
@@ -21,6 +21,7 @@ Buildrequires:	perl(Sys::SigAction)
 Buildrequires:	perl(Test::Pod)
 Buildrequires:	perl(Test::Pod::Coverage)
 Buildrequires:	perl(Test::Exception)
+
 BuildArch:	noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -47,7 +48,7 @@ exception.
 %make
 
 %check
-%{__make} test
+%make test
 
 %clean 
 rm -rf %{buildroot}
