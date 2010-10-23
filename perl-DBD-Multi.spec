@@ -1,5 +1,5 @@
 %define upstream_name	 DBD-Multi
-%define upstream_version 0.15
+%define upstream_version 0.16
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
