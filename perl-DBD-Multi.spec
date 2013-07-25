@@ -1,15 +1,15 @@
 %define upstream_name	 DBD-Multi
-%define upstream_version 0.16
+%define upstream_version 0.18
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%perl_convert_version 0.18
+Release:	1
 
 Summary:	Manage Multiple Data Sources with Failover and Load Balancing
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/DBD/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/DBD/DBD-Multi-0.18.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(DBD::File)
@@ -105,3 +105,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Fri Jul 06 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.10-1mdv2008.0
 - first mdv release 
+

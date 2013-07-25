@@ -1,2 +1,4 @@
+removed_sources:
+  DBD-Multi-0.16.tar.gz: 9cb5b453e146dfe1171b48334bcc7692a61c3886
 sources:
-  "DBD-Multi-0.16.tar.gz": 9cb5b453e146dfe1171b48334bcc7692a61c3886
+  DBD-Multi-0.18.tar.gz: a3f2b0e7328498e3307d6fdee40e100142211e57
