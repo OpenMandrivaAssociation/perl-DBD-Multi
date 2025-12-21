@@ -11,6 +11,7 @@ Group:		Development/Perl
 Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/DBD/DBD-Multi-0.18.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(DBD::File)
 BuildRequires:	perl(DBD::SQLite)
