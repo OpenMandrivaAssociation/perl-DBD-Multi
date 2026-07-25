@@ -1,15 +1,15 @@
 %define upstream_name	 DBD-Multi
-%define upstream_version 0.18
+%define upstream_version 1.02
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.18
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Manage Multiple Data Sources with Failover and Load Balancing
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/DBD/DBD-Multi-0.18.tar.gz
+Url:        https://github.com/dwright/DBD-Multi
+Source0:	https://cpan.metacpan.org/authors/id/D/DW/DWRIGHT/DBD-Multi-1.02.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
