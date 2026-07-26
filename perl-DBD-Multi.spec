@@ -1,9 +1,7 @@
 %define upstream_name	 DBD-Multi
-%define upstream_version 1.02
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.02
+Release:	2
 
 Summary:	Manage Multiple Data Sources with Failover and Load Balancing
 License:	GPL+ or Artistic
@@ -39,7 +37,7 @@ The interface is nearly the same as other DBI drivers with one notable
 exception.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -71,9 +69,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.140.0-1mdv2010.0
 + Revision: 403093
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.14-3mdv2009.0
+- rebuild using %1.02 Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.14-3mdv2009.0
 + Revision: 256563
 - rebuild
 
